@@ -1,0 +1,235 @@
+<!--------------------------------------------
+Project: ITW2 - web presentation (portfolio)
+File: index.html
+Brief: Implementation of website structure
+Author: Markéta Belatková (xbelat02)
+--------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/master.js"></script>
+    <!-- title -->
+    <title>My portfolio</title>
+</head>
+<body>
+    <div class="sticky-header">
+        <div class="sticky-header-content">
+            <div>Jméno Příjmení</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Portfolio</a></li>
+                    <li><a href="#education">Vzdělání</a></li>
+                    <li><a href="#experience">Pracovní zkušenosti</a></li>
+                    <li><a href="#partners">Partneři</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <header>
+        <section class="content">
+            <div class="header-logo">
+                <a class="header-logo-image" href="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png">
+                    <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="">
+                </a>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Portfolio</a></li>
+                        <li><a href="#education">Vzdělání</a></li>
+                        <li><a href="#experience">Pracovní zkušenosti</a></li>
+                        <li><a href="#partners">Partneři</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="content">
+            <div class="content-format" id="about">
+                <div class="about-title">
+                    <div class="about-name">Titul<br>Jméno<br>Příjmení</div>
+                    <div class="about-job">pracovní pozice</div>
+                </div>
+                <div class="about-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet. Sed ac augue ac nibh pretium ultrices vitae vitae orci. Fusce felis nisl, facilisis nec blandit ac, pellentesque a lorem. In ac tempor purus, non euismod tellus. Fusce vel sem nec nibh tincidunt laoreet. Integer pellentesque elit tristique, congue velit vitae, suscipit dui.
+                </div>
+            </div>
+    
+            <div id="education">
+                <h2>Vzdělání</h2>
+                <div class="education-items">
+                    <div class="education-item">
+                        <div class="education-item-school">
+                            Střední škola<br>
+                            obor
+                        </div>
+                        <div class="education-item-period">
+                            1945-1949
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-item-school">
+                            Vysoká škola<br>
+                            obor
+                        </div>
+                        <div class="education-item-period">
+                            1949-1954
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="experience">
+                <h2>Pracovní zkušenosti</h2>
+                <div class="experience-timeline content-format">
+                    <div class="experience-timeline-item">
+                        <a href="#compas1">První pracovní pozice</a>
+                        <div class="experience-year">1955</div>
+                    </div>
+                    <div class="experience-timeline-item"></div>
+                    <div class="experience-timeline-item">
+                        <a href="#compas2">Druhá pracovní pozice</a>
+                        <div class="experience-year">1973</div>
+                    </div>
+                    <div class="experience-timeline-item"></div>
+                    <div class="experience-timeline-item">
+                        <a href="#compas3">Aktuální pracovní pozice</a>
+                        <div class="experience-year">1978</div>
+                    </div>
+                    <div class="experience-timeline-item"></div>
+                </div>
+            </div>
+    
+            <div class="content-format" id="compas1">
+                <h2>Společnost</h2>
+                <h2>První pracovní pozice</h2>
+                <h3>1955-1973</h3>
+    
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="content-format" id="compas2">
+                <h2>Společnost</h2>
+                <h2>Druhá pracovní pozice</h2>
+                <h3>1973-1978</h3>
+
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="content-format" id="compas3">
+                <h2>Společnost</h2>
+                <h2>Aktuální pracovní pozice</h2>
+                <h3>1978-Současnost</h3>
+
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non justo mollis, vehicula lectus eu, lobortis metus. Donec aliquam volutpat sem id imperdiet.
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="content-format" id="partners">
+                <h2>Partneři</h2>
+                
+                <div class="partners-items">
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="ABB">
+                    </div>
+                    
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="Sellier Bellot">
+                    </div>
+                    
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="FANUC">
+                    </div>
+                    
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="STAUBLI">
+                    </div>
+                </div>
+
+                <div class="partners-items">
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="ABB">
+                    </div>
+                    
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="Sellier Bellot">
+                    </div>
+                    
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="FANUC">
+                    </div>
+                    
+                    <div class="partners-item">
+                        <img src="https://github.com/mbejda/placeholder-cli/raw/master/images/placeholder.png?raw=true" alt="STAUBLI">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="content" id="contact">
+            <h2>Kontakt</h2>
+            <div id="phone">
+                Tel.:
+                <a href="tel:+420123456789">
+                    +420 123 456 789
+                </a>
+            </div>
+            <div id="email">
+                E-mail:
+                <a href="mailto:jmeno.prijmeni@seznam.cz">
+                    jmeno.prijmeni@seznam.cz
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,432 @@
+/*********************************************
+Project: ITW2 - web presentation (portfolio)
+File: style.css
+Brief: Implementation of website's styles
+Author: Markéta Belatková (xbelat02)
+*********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --grey: #cecece;
+    --blue: #4586ae;
+    --light: #8fbfde;
+    --staricon: '\f005';
+}
+
+/***** body *****/
+body {
+    background-color: white;
+    position: relative;
+    margin: 0;
+    text-align: justify;
+    font-family: 'Poppins';
+}
+
+footer {
+    padding: 30px 0 50px;
+}
+
+footer .content {
+    margin: 0 auto;
+    width: 70%;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 10px 0 5px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #e4e4e4;
+    text-shadow: 2px 2px 2px #494949;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+a:hover {
+    color: white;
+    transition: color .3s;
+}
+
+/***** sticky header *****/
+.sticky-header {
+    background-color: var(--blue);
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    
+}
+
+.sticky-header-active {
+    top: 0;
+    position: fixed;
+    opacity: 1;
+    
+    transition: opacity .5s;
+}
+
+.sticky-header .sticky-header-content {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    color: white;
+}
+
+.sticky-header nav ul li {
+    display: inline;
+    margin-left: 50px;
+}
+
+.sticky-header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/***** header *****/
+header {
+    background-color: var(--blue);
+    padding: 20px 0;
+    
+    color: white;
+}
+
+header .content {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-logo {
+    min-width: 150px;
+}
+
+header .header-logo-image {
+    text-align: center;
+}
+
+header .header-logo-image img {
+    border-radius: 50%;
+    height: 120px;
+    aspect-ratio: 1 / 1;
+}
+
+header .content nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+}
+
+header .content nav ul li {
+    margin-left: 50px;
+}
+
+header .content nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/***** main *****/
+.content-format {
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* about */
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+#about .about-title {
+    width: 40%;
+}
+
+#about .about-name {
+    font-size: 44px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+#about .about-job {
+    border-top: 2px solid black;
+    width: fit-content;
+    font-size: 36px;
+}
+
+#about .about-info {
+    width: 60%;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#education h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#education .education-items {
+    display: flex;
+    height: 400px;
+}
+
+#education .education-item {
+    width: 50%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    align-content: center;
+}
+
+#education .education-item:first-child {
+    background-image: url("https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=652&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+#education .education-item:last-child {
+    background-image: url("https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=652&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+#education .education-item .education-item-school {
+    text-shadow: 3px 3px 3px #000000;
+
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#education .education-item .education-item-period {
+    text-shadow: 3px 3px 3px #000000;
+
+    font-size: 24px;
+}
+
+/* experience */
+#experience {
+    padding: 20px 0 75px;
+    background-color: var(--blue);
+    color: white;
+}
+
+#experience h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#experience .experience-timeline {
+    display: flex;
+    align-items: center;
+}
+
+#experience .experience-timeline .experience-timeline-item {
+    position: relative;
+    margin: 0 4px;
+}
+
+#experience .experience-timeline .experience-timeline-item a {
+    position: absolute;
+    text-align: center;
+    top: 150%;
+    text-decoration: none;
+}
+
+#experience .experience-timeline .experience-timeline-item .experience-year {
+    position: absolute;
+    text-align: center;
+    bottom: 150%;
+    left: calc(50% - 17px);
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(1) {
+    flex-grow: 1;
+    border: 1px solid white;
+    border-radius: 50%;
+    aspect-ratio: 1/1; 
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(1) a {
+    left: calc(50% - 35px);
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(2) {
+    flex-grow: 23;
+    height: 0;
+    border-top: 1px solid white;
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(3) {
+    flex-grow: 1;
+    border: 1px solid white;
+    border-radius: 50%;
+    aspect-ratio: 1/1; 
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(3) a {
+    left: calc(50% - 33px);
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(4) {
+    flex-grow: 8;
+    border-top: 1px solid white;
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(5) {
+    flex-grow: 1;
+    border: 1px solid white;
+    border-radius: 50%;
+    aspect-ratio: 1/1; 
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(5) a {
+    width: 180px;
+    left: calc(50% - 90px);
+}
+
+#experience .experience-timeline .experience-timeline-item:nth-child(6) {
+    flex-grow: 8;
+    border-top: 1px solid white;
+}
+
+#compas1, #compas2, #compas3 {
+    padding: 0 0 10px;
+    text-align: left;
+}
+
+#compas1 {
+    padding: 30px 0 10px;
+}
+
+/* partners */
+#partners h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#partners .partners-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#partners .partners-item img {
+    width: 120px;
+}
+
+/***** footer *****/
+footer {
+    background-color: var(--blue);
+    color: white;
+}
+
+footer #phone {
+    float: left;
+}
+
+footer #email {
+    float: right;
+}
+
+@media only screen and (max-width: 1024px) {
+    #experience .experience-timeline .experience-timeline-item:nth-child(5) a {
+        width: 100px;
+        left: calc(50% - 50px);
+    }
+
+    #experience {
+        padding: 20px 0 120px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .sticky-header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    header .content nav ul {
+        display: block;
+    }
+
+    header .content nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #education .education-items {
+        display: block;
+        height: auto;
+    }
+
+    #education .education-item {
+        width: 100%;
+        height: 300px;
+    }
+
+    #about {
+        display: block;
+    }
+
+    #about .about-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about .about-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #partners .partners-items {
+        display: block;
+    }
+
+    #partners .partners-item {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #partners .partners-item img {
+        width: 170px;
+    }
+
+    footer .content #phone, footer .content #email {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #experience .experience-timeline .experience-timeline-item a {
+        font-size: 13px;
+    }
+
+    #experience .experience-timeline .experience-timeline-item:last-child {
+        display: none;
+    }
+}
